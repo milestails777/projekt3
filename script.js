@@ -6,11 +6,12 @@ const quesionStatus = document.querySelector(".question-status");
 const timerDisplay = document.querySelector(".time-duration");
 const resultContainer = document.querySelector(".result-container")
 
+
 const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
-let quizCategory
-let numberOfQuestions
+let quizCategory = "niomos";
+let numberOfQuestions = 15;
 let currentQuestion = null;
 const questionsIndexHistory = [];
 let correctAnswersCount = 0;
@@ -22,7 +23,17 @@ const showQuizResult = () => {
     const resultText = `You answered <b>${correctAnswersCount}</b> out of <b>${numberOfQuestions}</b> questions correctly.
       Great try!`;
     document.querySelector(".result-message").innerHTML = resultText;
-}
+
+    const lastResult = {
+        category: quizCategory,
+        total: numberOfQuestions,
+        correct: correctAnswersCount,
+        date: new Date().toLocaleString()
+    };
+    localStorage.setItem("lastQuizResult", JSON.stringify(lastResult));
+
+    displayLastResult();
+};
 
 const resetTimer = () => {
     clearInterval(timer);
@@ -39,6 +50,7 @@ const startTimer = () => {
             clearInterval(timer);
             highlightCorrectAnswer();
             nextQuestionBtn.style.visibility = "visible";
+            quizContainer.querySelector(".quiz-timer").style.background = "#c31402";
 
             answerOptions.querySelectorAll(".answer-option").forEach(option => option.style.pointerEvents = "none");
 
@@ -93,6 +105,7 @@ const renderQuestion = () => {
 
     answerOptions.innerHTML = "";
     nextQuestionBtn.style.visibility = "hidden";
+    quizContainer.querySelector(".quiz-timer").style.background = "#3d3b3be3";
     document.querySelector(".quiz-question").textContent = currentQuestion.question;
     quesionStatus.innerHTML = `<b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`;
 
@@ -109,8 +122,10 @@ const startQuiz = () => {
     configContainer.style.display = "none";
     quizContainer.style.display = "block";
 
-    quizCategory = configContainer.querySelector(".category-option.active").textContent;
-    numberOfQuestions = parseInt(configContainer.querySelector(".question-option.active").textContent);
+    //I cannot solve problem with this part of code, it literally doesn't work!
+
+    //quizCategory = configContainer.querySelector(".category-option.active").textContent;
+    //numberOfQuestions = parseInt(configContainer.querySelector(".question-option.active").textContent);
 
     renderQuestion();
 
@@ -135,4 +150,48 @@ nextQuestionBtn.addEventListener("click", renderQuestion);
 document.querySelector(".try-again-btn").addEventListener("click", resetQuiz);
 document.querySelector(".start-quiz-btn").addEventListener("click", startQuiz);
 
+//andmebaasid
+const displayLastResult = () => {
+    const resultData = localStorage.getItem("lastQuizResult");
+    if (!resultData) return;
+
+    const result = JSON.parse(resultData);
+    const resultText = `
+      The Last Result: <b>${result.correct}</b> из <b>${result.total}</b><br>
+      Category: <b>${result.category}</b><br>
+      Date: ${result.date}
+    `;
+    document.querySelector(".last-result-text").innerHTML = resultText;
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+    displayLastResult();
+});
+
+document.querySelector(".erase-result-btn").addEventListener("click", () => {
+    localStorage.removeItem("lastQuizResult");
+    document.querySelector(".last-result-text").innerHTML = "Result is erased";
+});
+
+const music = document.getElementById("background-music");
+const musicBtn = document.querySelector(".music-toggle-btn");
+const musicIcon = musicBtn.querySelector("span");
+
+const isMusicOn = localStorage.getItem("musicOn") === "true";
+if (isMusicOn) {
+    music.play().catch(() => {});
+    musicIcon.textContent = "pause";
+}
+
+musicBtn.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        musicIcon.textContent = "pause";
+        localStorage.setItem("musicOn", "true");
+    } else {
+        music.pause();
+        musicIcon.textContent = "music_note";
+        localStorage.setItem("musicOn", "false");
+    }
+});
 //55:13

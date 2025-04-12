@@ -6,16 +6,16 @@ const questions = [
       {
         question: "Laps tuleb varsti 'kuST?'",
         options: ["Lasteajast", "Lasteajas", "Lasteajale"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which of the following is a correct way to declare a variable in JavaScript?",
-        options: ["var x = 10;", "variable x = 10;", "int x = 10;", "let 10 = x;"],
         correctAnswer: 0,
       },
       {
-        question: "How do you write comment in Python?",
-        options: ["// This is a comment", "# This is a comment", "/* This is a comment */", "<!-- This is a comment -->"],
+        question: "Ma lähen kuhu:",
+        options: ["kodu", "kodus", "koju", "majas"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Ema käib iga päev kuS?",
+        options: ["poodi", "poes", "pood"],
         correctAnswer: 1,
       },
       {
@@ -132,7 +132,7 @@ const questions = [
   },
 
   {
-    category: "Eesti Kääned",
+    category: "estkaaned",
     questions: [
       {
         question: "Which is the longest river in the world?",
@@ -263,7 +263,7 @@ const questions = [
   },
 
   {
-    category: "mathematics",
+    category: "sonad",
     questions: [
       {
         question: "What is the square root of 144?",
@@ -394,7 +394,7 @@ const questions = [
   },
 
   {
-    category: "entertainment",
+    category: "numbrid",
     questions: [
       {
         question: "Who won the Academy Award for Best Actor in 2022?",
