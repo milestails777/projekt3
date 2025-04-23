@@ -281,29 +281,29 @@ const questions = [
         correctAnswer: 1,
       },
       {
-        question: "How to pronouce this number? 17",
-        options: ["Seitse sada", "Seitsekümmend", "Seitseteist"],
+        question: "What does this word mean? Aeg",
+        options: ["Time", "Aegna Island", "Watch"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What differences, between AEG and KELL?",
+        options: ["Aeg we are using to say, that this is watches or what time it is, but Kell for other time or conversations", "Kell we are using to say, what time it is only and it's watch, but Aeg we are using for other time or for correct conversation", "I don't know"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Who is this bird? PAPAGOI",
+        options: ["Seagull", "Eagle", "Duck", "Parrot"],
+        correctAnswer: 3,
+      },
+      {
+        question: "How you would say 'Today is beautiful weather'?",
+        options: ["Taevas on pilves", "Eile oli ilus ilm", "Täna on ilus ilm", "Täna on päike paistab"],
         correctAnswer: 2,
       },
       {
-        question: "How to pronouce this number? 111",
-        options: ["Sada üksteist", "üksteist sada", "üks tuhat"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Try to found, what is it equal in Estonian: 1000 * 10",
-        options: ["tuhat", "kümme tuhat", "sada tuhat", "üks tuhat"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What does this number mean? tuhat",
-        options: ["one hundred", "one thousand", "ten", "fifthteen"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What does this word mean? sada kolmkümmend üks",
-        options: ["121", "131", "141", "111"],
-        correctAnswer: 1,
+        question: "What does this word mean? Arvuti",
+        options: ["AI", "Remote", "Computer", "Machine"],
+        correctAnswer: 2,
       },
       {
         question: "What does this word mean? Kasutamine",
@@ -427,99 +427,99 @@ const questions = [
         correctAnswer: 2,
       },
       {
-        question: "Which movie franchise includes a character named Luke Skywalker?",
-        options: ["Guardians of the Galaxy", "Star Wars", "The Matrix", "Star Trek"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Who played the character of Hermione Granger in the Harry Potter film series?",
-        options: ["Emma Watson", "Anne Hathaway", "Maggie Smith", "Natalie Portman"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Who directed the movie 'Inception'?",
-        options: ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Martin Scorsese"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which artist released the album 'Lover' in 2019?",
-        options: ["Billie Eilish", "Taylor Swift", "Ed Sheeran", "Ariana Grande"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What was the first video game to feature Mario?",
-        options: ["Mario Kart", "Super Mario Bros.", "Donkey Kong", "The Legend of Zelda"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which movie features the famous line, 'Here's looking at you, kid'?",
-        options: ["Casablanca", "Citizen Kane", "The Godfather", "Gone with the Wind"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which country won the FIFA World Cup in 2018?",
-        options: ["France", "Germany", "Argentina", "Brazil"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Who created the comic book character Spider-Man?",
-        options: ["Jack Kirby", "Stan Lee", "Steve Ditko", "John Romita"],
-        correctAnswer: 1,
-      },
-      {
-        question: "In which movie did Heath Ledger portray the Joker?",
-        options: ["The Dark Knight", "Batman Begins", "The Dark Knight Rises", "Joker"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which band is known for the hit song 'Bohemian Rhapsody'?",
-        options: ["The Rolling Stones", "Led Zeppelin", "Queen", "The Beatles"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which actress starred as Katniss Everdeen in 'The Hunger Games'?",
-        options: ["Kristen Stewart", "Shailene Woodley", "Jennifer Lawrence", "Emma Stone"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Who played the role of the Joker in the 2019 movie 'Joker'?",
-        options: ["Heath Ledger", "Johnny Depp", "Joaquin Phoenix", "Jared Leto"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which Disney animated film features the song 'A Whole New World'?",
-        options: ["Cinderella", "Aladdin", "Beauty and the Beast", "The Little Mermaid"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which TV series features the characters of Walter White and Jesse Pinkman?",
-        options: ["Narcos", "Better Call Saul", "The Sopranos", "Breaking Bad"],
+        question: "Choose the correct answer for this numeration: 1,2,3,4,5,6,7,8,9,10",
+        options: ["Üks, Kaheksa, Kuus, viis, neli, Kolm, Seitse, Kaks, Üheksa, Kümme", "Yksi, Kaksi, Kolma, Nelja, Viisi, Kuusi, Seitsemän, Kahdeksän, Yhdeksän, Kymmenen", "Ein, Zwei, Drei, Vier, Fünf, Sechs, Sieben, Acht, Noin, Zehn", "Üks, Kaks, Kolm, Neli, Viis, Kuus, Seitse, Kaheksa, Üheksa, Kümme"],
         correctAnswer: 3,
       },
       {
-        question: "Who sang the hit song 'Shape of You'?",
-        options: ["Justin Bieber", "Ariana Grande", "Sam Smith", "Ed Sheeran"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which film won the Academy Award for Best Picture in 2020?",
-        options: ["The Irishman", "Once Upon a Time in Hollywood", "Parasite", "1917"],
+        question: "Try to found, what is it equal in Estonian: 150-35",
+        options: ["sada kolmkümmend viis", "sada kakskümmend viis", "sada viisteist", "sada nelikümmend viis"],
         correctAnswer: 2,
       },
       {
-        question: "What year did the movie 'The Matrix' release?",
-        options: ["1997", "1998", "2000", "1999"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which actor played Tony Stark/Iron Man in the Marvel Cinematic Universe?",
-        options: ["Mark Ruffalo", "Chris Evans", "Robert Downey Jr.", "Chris Hemsworth"],
+        question: "Logical Question: How you can pronouce decimal numbers shorter, when you're talking with someone? For Example: 20",
+        options: ["kakski", "ei või öelda lühikem", "kakskend", "kakskümmd"],
         correctAnswer: 2,
       },
       {
-        question: "Which singer is known as the 'Queen of Pop'?",
-        options: ["Mariah Carey", "Lady Gaga", "Whitney Houston", "Madonna"],
-        correctAnswer: 3,
+        question: "What is 3 + 5 in Estonian?",
+        options: ["kaks", "kaheksa", "üheksa", "kümme"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What is half of 30 in Estonian?",
+        options: ["viis", "kakskümmend viis", "viisteist"],
+        correctAnswer: 2,
+      },
+      {
+        question: "What does mean number 2018?",
+        options: ["Kaks tuhat kaheksateist", "Kaks tuhat kaheksakümmend", "Kaks sada kaheksa"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What is the square of 5 in Estonian?",
+        options: ["viis", "Kahekümne viis", "Kakskümmend viis", "kaksteist"],
+        correctAnswer: 2
+      },
+      {
+        question: "Historical Question: When Estonia was in independence for the first time?",
+        options: ["tuhat üheksasaja kaheksateist kümnendal aastal.", "tuhat üheksasaja seitsmeteist kümnendal aastal.", "tuhat üheksasaja kuueteist kümnendal aastal.", "tuhat üheksasaja üheteist kümnendal aastal."],
+        correctAnswer: 0,
+      },
+      {
+        question: "How do you say 0 in Estonian?",
+        options: ["null", "noll", "zero", "ei tea"],
+        correctAnswer: 0,
+      },
+      {
+        question: "If you have at the end of your sentence aastal, then how will write numbers? For Example, use number viis",
+        options: ["viies", "viiendal", "viis", "viit"],
+        correctAnswer: 1,
+      },
+      {
+        question: "What does mean number 1998?",
+        options: ["tuhat neli sada üksteist", "kaks tuhat üheksa", "tuhat üheksa sada üheksakümmend kaheksa", "tuhat seitse sada seitseteist"],
+        correctAnswer: 2,
+      },
+      {
+        question: "What is 0 - 5 in Estonian?",
+        options: ["viis", "null", "miinus viis", "pluus viis"],
+        correctAnswer: 2,
+      },
+      {
+        question: "How to say `first` in Estonian?",
+        options: ["pervoi", "üks", "esimene"],
+        correctAnswer: 2,
+      },
+      {
+        question: "How to say `third` in Estonian?",
+        options: ["kolmas", "viies", "teine", "kolm"],
+        correctAnswer: 0,
+      },
+      {
+        question: "How to say `seventh` in Estonian?",
+        options: ["kuues", "seitsmes", "seitsmendal", "seitse"],
+        correctAnswer: 1,
+      },
+      {
+        question: "How to say `in first` in Estonian?",
+        options: ["esimeses", "esimesel", "esiteks", "üks"],
+        correctAnswer: 0,
+      },
+      {
+        question: "What is 67 - 34 in Estonian?",
+        options: ["kolmkümmend kaks", "kolmkümmend kolm", "kolmteist", "kolmkümmend neli"],
+        correctAnswer: 1,
+      },
+      {
+        question: "Do you like our quiz? Don't worry about the colors.",
+        options: ["Jah", "Ei"],
+        correctAnswer: 0,
+      },
+      {
+        question: "Rate this Quiz) Don't worry about the colors.",
+        options: ["1", "2", "3", "4", "5"],
+        correctAnswer: 0, 
       },
     ],
   },

@@ -323,3 +323,33 @@ body {
   .music-toggle-btn:hover {
     background: #20c248;
   }
+
+  .highscores-banner {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    background: #e2f1d4ec;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 12px 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 100;
+}
+
+    .highscores-title {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .highscores-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .highscores-list li {
+        margin-bottom: 6px;
+        line-height: 1.2;
+    }

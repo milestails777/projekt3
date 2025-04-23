@@ -10,7 +10,7 @@ const resultContainer = document.querySelector(".result-container")
 const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
-let quizCategory = "sonad";
+let quizCategory = "numbrid";
 let numberOfQuestions = 15;
 let currentQuestion = null;
 const questionsIndexHistory = [];
@@ -31,6 +31,12 @@ const showQuizResult = () => {
         date: new Date().toLocaleString()
     };
     localStorage.setItem("lastQuizResult", JSON.stringify(lastResult));
+
+    let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    highScores.push(lastResult);
+    highScores.sort((a, b) => b.correct - a.correct); 
+    highScores = highScores.slice(0, 5); 
+    localStorage.setItem("highScores", JSON.stringify(highScores));
 
     displayLastResult();
 };
@@ -164,8 +170,23 @@ const displayLastResult = () => {
     document.querySelector(".last-result-text").innerHTML = resultText;
 };
 
+const displayHighScores = () => {
+    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    const list = document.querySelector(".highscores-list");
+    list.innerHTML = "";
+
+    highScores.forEach((entry, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <b>${index + 1}.</b> ${entry.correct}/${entry.total} - <i>${entry.category}</i> <br><small>${entry.date}</small>
+        `;
+        list.appendChild(li);
+    });
+};
+
 window.addEventListener("DOMContentLoaded", () => {
     displayLastResult();
+    displayHighScores();
 });
 
 document.querySelector(".erase-result-btn").addEventListener("click", () => {
