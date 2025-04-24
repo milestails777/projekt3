@@ -306,18 +306,18 @@ const questions = [
         correctAnswer: 2,
       },
       {
-        question: "What does this word mean? Kasutamine",
-        options: ["105", "110", "108", "120"],
-        correctAnswer: 2,
+        question: "What does this word mean? Weather",
+        options: ["ilm", "toit", "linn", "lind"],
+        correctAnswer: 0,
       },
       {
-        question: "What does this word mean? Kasutamine",
-        options: ["2", "3", "4", "5"],
-        correctAnswer: 2,
+        question: "What does this word mean? Ausalt",
+        options: ["Weird", "Fair", "Think", "Honestly"],
+        correctAnswer: 3,
       },
       {
-        question: "What does this word mean? Kasutamine",
-        options: ["30", "40", "50", "60"],
+        question: "What does this word mean? Hind",
+        options: ["Grade", "Number", "Price"],
         correctAnswer: 2,
       },
       {
