@@ -128,10 +128,8 @@ const startQuiz = () => {
     configContainer.style.display = "none";
     quizContainer.style.display = "block";
 
-    //I cannot solve problem with this part of code, it literally doesn't work!
-
-    //quizCategory = configContainer.querySelector(".category-option.active").textContent;
-    //numberOfQuestions = parseInt(configContainer.querySelector(".question-option.active").textContent);
+    quizCategory = configContainer.querySelector(".category-option.active").textContent;
+    numberOfQuestions = parseInt(configContainer.querySelector(".question-option.active").textContent);
 
     renderQuestion();
 

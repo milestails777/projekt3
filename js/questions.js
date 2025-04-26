@@ -1,7 +1,7 @@
 
 const questions = [
   {
-    category: "niomos",
+    category: "Nimetav, Omastav, Osastav",
     questions: [
       {
         question: "Laps tuleb varsti 'kuST?'",
@@ -132,7 +132,7 @@ const questions = [
   },
 
   {
-    category: "estkaaned",
+    category: "Eesti Kääned",
     questions: [
       {
         question: "Which is the longest river in the world?",
@@ -263,7 +263,7 @@ const questions = [
   },
 
   {
-    category: "sonad",
+    category: "Sõnad",
     questions: [
       {
         question: "What does this word mean? Kasutamine",
@@ -394,7 +394,7 @@ const questions = [
   },
 
   {
-    category: "numbrid",
+    category: "Numbrid",
     questions: [
       {
         question: "What does this number mean? tuhat",
