@@ -137,7 +137,7 @@ const questions = [
       {
         question: "Laps tuleb varsti 'kuST?'",
         options: ["Lasteajast", "Lasteajas", "Lasteajale"],
-        correctAnswer: 1,
+        correctAnswer: 0,
       },
       {
         question: "Ma lähen kuhu:",
@@ -147,7 +147,7 @@ const questions = [
       {
         question: "Ema käib iga päev kuS?",
         options: ["poodi", "poes", "pood"],
-        correctAnswer: 3,
+        correctAnswer: 1,
       },
       {
         question: "Which part of Estonian Cases we are using to say 'with something or with someone'?",
