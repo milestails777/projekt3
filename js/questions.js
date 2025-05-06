@@ -366,9 +366,9 @@ const questions = [
         correctAnswer: 1,
       },
       {
-        question: "What does this word mean? Kasutamine",
-        options: ["150", "160", "170", "180"],
-        correctAnswer: 3,
+        question: "How to say cat in Estonian?",
+        options: ["kissa", "kass", "koer", "isa"],
+        correctAnswer: 1,
       },
       {
         question: "How you could say in Estonian word Beautiful?",
