@@ -341,7 +341,7 @@ const questions = [
         correctAnswer: 2,
       },
       {
-        question: "What does this word mean? Suulane",
+        question: "What does this word mean? Sulane",
         options: ["Slave (Talupoeg)", "Servant"],
         correctAnswer: 1,
       },
